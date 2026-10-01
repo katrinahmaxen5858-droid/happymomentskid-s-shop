@@ -1,0 +1,400 @@
+/* General Reset & Fonts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9fbfd;
+    color: #333;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Banner Styling */
+.store-banner {
+    background: linear-gradient(135deg, #a8ede} 100%, #fed6e3 0%);
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+    text-align: center;
+    padding: 2.5rem 1rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+}
+
+.store-banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Shop Layout */
+.shop-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem 3rem 1rem;
+    gap: 2rem;
+}
+
+/* Sidebar Styling */
+.filters-sidebar {
+    width: 250px;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    height: fit-content;
+}
+
+.filters-sidebar h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #2c3e50;
+}
+
+.filter-group {
+    margin-bottom: 1.5rem;
+}
+
+.filter-group h4 {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.filter-group label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+    cursor: pointer;
+}
+
+/* Product Grid */
+.product-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+.product-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.image-wrapper {
+    position: relative;
+    background: #f1f5f9;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #ff6b6b;
+    color: white;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.75rem;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.product-info {
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.product-info h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.price {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e74c3c;
+    margin-bottom: 0.8rem;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #94a3b8;
+    font-size: 0.85rem;
+    margin-right: 0.4rem;
+}
+
+/* Size Pills */
+.size-options {
+    display: flex;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.size-options span {
+    border: 1px solid #cbd5e1;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.75rem;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #475569;
+}
+
+.size-options span:hover {
+    border-color: #3b82f6;
+    color: #3b82f6;
+}
+
+/* Button */
+.add-to-cart {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 0.6rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: auto;
+    transition: background 0.2s ease;
+}
+
+.add-to-cart:hover {
+    background: #2563eb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .shop-container {
+        flex-direction: column;
+    }
+    .filters-sidebar {
+        width: 100%;
+    }
+}
+
+.products { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 25px; }
+        .product { background: white; border-radius: 15px; padding: 15px; box-shadow: 0 3px 8px rgba(0,0,0,0.1); transition: transform 0.2s; }
+        .product:hover { transform: translateY(-5px); }
+        .product-gallery { display: flex; gap: 5px; overflow-x: auto; margin-bottom: 10px; }
+        .product-gallery img { width: 100%; height: 220px; object-fit: cover; border-radius: 10px; flex-shrink: 0; }
+        .product h3 { margin: 10px 0; font-size: 1.1rem; color: #333; }
+        .desc { font-size: 0.9rem; color: #666; margin-bottom: 8px; }
+        .price { color: #28a745; font-weight: bold; font-size: 1.3rem; margin: 8px 0; }
+        .whatsapp-btn { display: block; background: #25D366; color: white; padding: 12px; border-radius: 8px; text-decoration: none; text-align: center; font-weight: bold; margin-top: 8px; }
+        .whatsapp-btn:hover { background: #128C7E; }
+
+
+/* Page Background & Layout */
+.toys-page-body {
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: #333;
+    padding-bottom: 3rem;
+}
+
+.toys-main-header {
+    background: #ffffff;
+    border-bottom: 2px solid #eaeaea;
+    padding: 1.2rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.toys-header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toys-back-link {
+    text-decoration: none;
+    color: #4f46e5;
+    font-weight: 600;
+}
+
+.toys-main-header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #1e1b4b;
+}
+
+.toys-cart-badge {
+    background: #eef2ff;
+    color: #4f46e5;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.toys-main-container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Category Banners */
+.toy-category-section {
+    margin-bottom: 3rem;
+}
+
+.category-title-wrapper {
+    padding: 1.2rem 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.category-title-wrapper h2 {
+    margin: 0 0 0.3rem 0;
+    font-size: 1.4rem;
+}
+
+.category-title-wrapper p {
+    margin: 0;
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+.girls-theme {
+    background: linear-gradient(135deg, #f472b6, #db2777);
+}
+
+.boys-theme {
+    background: linear-gradient(135deg, #38bdf8, #2563eb);
+}
+
+/* Product Grid */
+.toys-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+.toys-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.toys-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.toys-img-placeholder {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.girls-bg {
+    background-color: #fce7f3;
+    color: #db2777;
+}
+
+.boys-bg {
+    background-color: #e0f2fe;
+    color: #0284c7;
+}
+
+.toys-info {
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.toys-badge {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+    width: fit-content;
+    margin-bottom: 0.6rem;
+}
+
+.girls-tag {
+    background: #fdf2f8;
+    color: #db2777;
+}
+
+.boys-tag {
+    background: #f0f9ff;
+    color: #0284c7;
+}
+
+.toys-card h3 {
+    font-size: 1.05rem;
+    margin: 0 0 0.4rem 0;
+    color: #1e293b;
+}
+
+.toys-price {
+    font-weight: bold;
+    color: #0f172a;
+    font-size: 1.1rem;
+    margin: 0 0 1rem 0;
+}
+
+.toys-cart-btn {
+    width: 100%;
+    background: #1e1b4b;
+    color: white;
+    border: none;
+    padding: 0.6rem;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.toys-cart-btn:hover {
+    background: #312e81;
+}
+
+.toy-image-container {
+    height: 160px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.toy-img {
+    width: 100%;
+    height: 100%
+    objet-fit: cover;
+    display: block;
+}
+

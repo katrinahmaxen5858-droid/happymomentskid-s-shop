@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Moments Kids Shopping Center - Lyantonde Mukanya</title>
+	<a href="index.html">Home</a> |
+	<a href="clothes.html">Clothes</a> |
+	<a href="shoes.html">Shoes</a> 
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background: #fff0f5; color: #333; line-height: 1.6; }
+        header { background: linear-gradient(135deg, #ff69b4, #ff1493); color: white; text-align: center; padding: 30px 20px; }
+        header h1 { font-size: 1.8rem; }
+        header p { font-size: 1rem; margin-top: 5px; }
+        
+        .container { max-width: 1100px; margin: auto; padding: 20px; }
+        
+        /* Video Banner */
+        .video-banner { margin: 20px 0; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .video-banner video { width: 100%; display: block; }
+        
+        h2 { color: #ff1493; margin: 30px 0 15px; text-align: center; font-size: 1.5rem; }
+        
+        /* Categories */
+        .categories { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px; }
+        .cat-btn { background: white; border: 2px solid #ff69b4; color: #ff69b4; padding: 8px 15px; border-radius: 20px; cursor: pointer; font-weight: bold; }
+        .cat-btn.active { background: #ff69b4; color: white; }
+        
+        /* Products */
+        .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 25px; }
+        .product { background: white; border-radius: 15px; padding: 15px; box-shadow: 0 3px 8px rgba(0,0,0,0.1); transition: transform 0.2s; }
+        .product:hover { transform: translateY(-5px); }
+        .product-gallery { display: flex; gap: 5px; overflow-x: auto; margin-bottom: 10px; }
+        .product-gallery img { width: 100%; height: 220px; object-fit: cover; border-radius: 10px; flex-shrink: 0; }
+        .product h3 { margin: 10px 0; font-size: 1.1rem; color: #333; }
+        .desc { font-size: 0.9rem; color: #666; margin-bottom: 8px; }
+        .price { color: #28a745; font-weight: bold; font-size: 1.3rem; margin: 8px 0; }
+        .whatsapp-btn { display: block; background: #25D366; color: white; padding: 12px; border-radius: 8px; text-decoration: none; text-align: center; font-weight: bold; margin-top: 8px; }
+        .whatsapp-btn:hover { background: #128C7E; }
+        
+        .contact { background: white; padding: 25px; border-radius: 15px; margin-top: 40px; text-align: center; box-shadow: 0 3px 8px rgba(0,0,0,0.1); }
+        footer { background: #333; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+		.visit-us {
+		     background-color: gold;
+		     color: #333;
+			 }
+		.visit-us h2 {
+		  font-size: 32px;
+		  margin-bottom: 15px;
+		  color: #000
+		  
+		.vist-us .btn {
+		    background-color: #000;
+			color: gold;
+			padding: 12px 25px;
+			text-decoration: none;
+			border-radius: 8px;
+			font-weight: bold;
+			display: inline-block;
+		};
+		
+		.visit-us .btn:hover {
+		    background-color:#333;
+		}
+        
+        @media(max-width: 600px) { 
+            header h1 { font-size: 1.4rem; } 
+            .products { grid-template-columns: 1fr; } 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Happy Moments Kids Shopping Center</h1>
+		          <div>
+                    <img src="image1.jpg" alt="banner" height="400" width="900">
+                  </div>
+        <p>Quality Kids Clothes, Toys & Shoes | Lyantonde Mukanya | Call: 0750 711 885</p>
+    </header>
+
+    <div class="container">
+        
+
+
+        <h2>Our Products</h2>
+        <p style="text-align:center; margin-bottom:15px;">Browse and order directly via WhatsApp. Cash on Delivery available in Lyantonde.</p>
+
+        <!-- CATEGORIES -->
+        <div class="categories">
+			<a href="index.html">Home </a> |
+	        <a href="clothes.html">Clothes.</a> |
+	        <a href="shoes.html">Shoes.</a> |
+	        <a href="toys.html">Toys.</a>
+            
+        </div>
+
+        <div class="products">
+            
+            <!-- PRODUCT 1 - Use multiple images here -->
+            <div class="product">
+                <div class="product-gallery">
+                    <img src="image3.jpg" alt="Baby Dress Front">
+                    <img src="image3.jpg" alt="Baby Dress Back">
+                </div>
+                <h3>Baby Girl Dress</h3>
+                <p class="desc">100% Cotton, Age 1-3 years. Available in Pink, Yellow, Blue</p>
+                <p class="price">UGX 35,000</p>
+                <a class="whatsapp-btn" href="https://wa.me/256750711885?text=Hello%20Madam%20Rebecca,%20I%20want%20to%20order:%20Baby%20Girl%20Dress%20-%20UGX%2035,000" target="_blank">Order on WhatsApp</a>
+				<div class="product-gallery">
+				    <img src="image2.jpg" alt="Baby Dress Back"> |
+					<img src="clangs-trousers.jpg"  alt="Kids Sneakers">
+				</div>
+				<h3></h3>Boy's styles
+                <p class="desc">100% Cotton, Age 1-3 years. Available in Pink, Yellow, Blue</p>
+                <p class="price">UGX 40000</p>
+                <a class="whatsapp-btn" href="https://wa.me/256750711885?text=Hello%20Madam%20Rebecca,%20I%20want%20to%20order:%20Baby%20Girl%20Dress%20-%20UGX%2035,000" target="_blank">Order on WhatsApp</a>
+            
+            </div>
+
+            <!-- PRODUCT 2 -->
+            <div class="product">
+                <div class="product-gallery">
+                    <img src="image4.jpg" alt="Kids Sneakers">
+                </div>
+                <h3>Kids Sneakers</h3>
+                <p class="desc">Lightweight & Comfortable. Size 24-35. Colors: Blue, Red</p>
+                <p class="price">UGX 30,000</p>
+                <a class="whatsapp-btn" href="https://wa.me/256750711885?text=Hello%20Madam%20Rebecca,%20I%20want%20to%20order:%20Kids%20Sneakers%20-%20UGX%2040,000" target="_blank">Order on WhatsApp</a>
+				<div class="product-gallery">
+                    <img src="baby.jpg" alt="Kids Sneakers">
+                </div>
+				<h3>baby usables</h3>
+                <p class="desc">Lightweight & Comfortable. Size 24-35. Colors: Blue, Red</p>
+                <p class="price">UGX 30,000</p>
+                <a class="whatsapp-btn" href="https://wa.me/256750711885?text=Hello%20Madam%20Rebecca,%20I%20want%20to%20order:%20Kids%20Sneakers%20-%20UGX%2040,000" target="_blank">Order on WhatsApp</a>
+            </div>
+
+            <!-- PRODUCT 3 - Product with video -->
+            <div class="product">
+                <div class="product-gallery">
+                    <img src="toy4.jpg" alt="Kids Sneakers">
+                </div>
+                <h3>Toy Car Set</h3>
+                <p class="desc">Educational 3-piece set. Ages 3+. Batteries included</p>
+                <p class="price">UGX 250,000</p>
+                <a class="whatsapp-btn" href="https://wa.me/256750711885?text=Hello%20Madam%20Rebecca,%20I%20want%20to%20order:%20Toy%20Car%20Set%20-%20UGX%2025,000" target="_blank">Order on WhatsApp</a>
+				<div class="product-gallery">
+                    <img src="horse.jpg"  alt="Kids Sneakers"> |
+					<img src="car.jpg"  alt="Kids Sneakers"> |
+					<img src="teddy.jpg"  alt="Kids Sneakers">
+                </div>
+                <h3>Kids toys</h3>
+                <p class="desc">Lightweight & Comfortable. Size 24-35. Colors: Blue, Red</p>
+                <p class="price">UGX 30,000</p>
+                <a class="whatsapp-btn" href="https://wa.me/256750711885?text=Hello%20Madam%20Rebecca,%20I%20want%20to%20order:%20Kids%20Sneakers%20-%20UGX%2040,000" target="_blank">Order on WhatsApp</a>
+            </div>
+
+        </div>
+        
+	
+         <section class="visit-us">
+            <h2>VISIT US</h2>
+			<p>We would love to see you! Come give you child a childhood joy to remember.</p>
+		<div class="visit-container">
+		
+		  <div class="visit-box">
+		     <h3><i>OUR LOCATION</i></h3>
+             <p><u>Owner:</u> Nimusiima Rebecca</p>
+             <p><u>Phone/WhatsApp:</u> 0750 711 885</p>
+             <p><u>Location:</u> Lyantonde Mukanya, Lyantonde District</p>
+		  </div>
+		  <div class="visit-box">
+		    <h3><i>OPENING HOURS</i></h3>
+            <p> Mon - fri, 8:00am - 6:00pm</p>
+			<p>Saturday: 10am - 4pm</p>
+			<p>Sunday: Closed</p>
+		  </div>
+            <iframe src="https://www.google.com/maps/embed?pb=" width="100%" height="250" style="border:0; border-radius:10px; margin-top:15px;" allowfullscreen loading="lazy"></iframe>
+			
+		</div>
+         </section>
+		
+    </div>
+
+    <footer>
+        &copy; 2026 Happy Moments Kids Shopping Center. Website by Namanya Ronah - St. Lawrence University CE Project
+    </footer>
+
+</body>
+</html>
